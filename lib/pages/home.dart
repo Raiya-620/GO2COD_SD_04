@@ -117,13 +117,16 @@ class _HomeState extends State<Home> {
             const SizedBox(
               height: 30,
             ),
-            TextButton(
-              style: ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll(Colors.red)),
-              onPressed: () {
-                generatePassword();
-              },
-              child: const Text('Generate Password'),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  generatePassword();
+                },
+                child: const Text(
+                  'Generate Password',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
             ),
             const SizedBox(
               height: 16,
